@@ -57,7 +57,7 @@ const btnSendWhatsapp = document.getElementById('send-whatsapp');
 let customerName = "";
 let paymentMethod = "efectivo";
 let cashAmount = "";
-const ACCOUNT_NUMBER = "1234 5678 9012"; // ✅ Tu número de cuenta
+const ACCOUNT_NUMBER = "4027 6657 7906 5946"; // ✅ Tu número de cuenta
 const SHIPPING_FEE = 15;
 
 /* ===== Carrito ===== */
@@ -359,4 +359,5 @@ function escapeHtml(str) {
   const first = document.querySelector('.category-btn');
   if (first) first.click();
 })();
+
 
