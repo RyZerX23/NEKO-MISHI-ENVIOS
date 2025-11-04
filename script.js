@@ -329,7 +329,7 @@ function sendToWhatsapp() {
   }
 
   const message = lines.join('\n');
-  const phone = '5537719034';
+  const phone = '5511819149';
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(url, '_blank');
@@ -359,3 +359,4 @@ function escapeHtml(str) {
   const first = document.querySelector('.category-btn');
   if (first) first.click();
 })();
+
