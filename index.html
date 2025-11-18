@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Toma de pedidos NEKO-MISHI</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>
+            <img src="logo.jpg" alt="Logo" style="width:80px; height:80px; margin-right:8px; vertical-align:middle;">
+            Toma de Pedidos
+        </h1>
+
+        <button id="btn-cart" class="cart-btn">
+            Carrito (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main class="container">
+        <aside class="categories" id="categories"></aside>
+
+        <section class="menu" id="menu">
+
+            <!-- ✅ DULCE -->
+            <div class="category-block">
+                <h2>Dulce</h2>
+
+                <div class="product" data-name="Dorilocos" data-price="55">
+                    <span>Dorilocos</span><strong>$55</strong>
+                </div>
+
+                <div class="product" data-name="Fruta loca" data-price="75">
+                    <span>Fruta loca</span><strong>$75</strong>
+                </div>
+
+                <div class="product" data-name="Boing congelado" data-price="50">
+                    <span>Boing congelado</span><strong>$50</strong>
+                </div>
+
+                <div class="product" data-name="Gomilocas" data-price="35">
+                    <span>Gomilocas</span><strong>$35</strong>
+                </div>
+            </div>
+
+            <!-- ✅ SALADO -->
+            <div class="category-block">
+                <h2>Salado</h2>
+
+                <div class="product" data-name="Vaso de Cacahuates" data-price="25">
+                    <span>Vaso de Cacahuates</span><strong>$25</strong>
+                </div>
+
+                <div class="product" data-name="Vaso de Cueritos" data-price="20">
+                    <span>Vaso de Cueritos</span><strong>$20</strong>
+                </div>
+            </div>
+
+            <!-- ✅ FREIDORA -->
+            <div class="category-block">
+                <h2>Freidora</h2>
+
+                <div class="product" data-name="Papas a la francesa" data-price="45">
+                    <span>Papas a la francesa</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Aros de cebolla" data-price="45">
+                    <span>Aros de cebolla</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Papas gajo" data-price="45">
+                    <span>Papas gajo</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Mix de papas" data-price="55">
+                    <span>Mix de papas<br><small>(Francesa, aros y gajo)</small></span>
+                    <strong>$55</strong>
+                </div>
+
+                <div class="product" data-name="Boules con papas a la francesa" data-price="85">
+                    <span>Boules con papas a la francesa</span><strong>$85</strong>
+                </div>
+
+                <div class="product" data-name="Banderilla Coreana" data-price="55">
+                    <span>Próximamente Banderilla Coreana<br><small>(cheto, papa o ramen)</small></span>
+                    <strong>$55</strong>
+                </div>
+            </div>
+
+            <!-- ✅ PLANCHA -->
+            <div class="category-block">
+                <h2>Plancha</h2>
+
+                <div class="product" data-name="Hamburguesa sencilla" data-price="75">
+                    <span>Hamburguesa sencilla</span><strong>$75</strong>
+                </div>
+
+                <div class="product" data-name="Hamburguesa sencilla con papas/aros" data-price="100">
+                    <span>Hamburguesa sencilla (con papas o aros)</span><strong>$100</strong>
+                </div>
+
+                <div class="product" data-name="Hamburguesa hawaiana" data-price="95">
+                    <span>Hamburguesa hawaiana</span><strong>$95</strong>
+                </div>
+
+                <div class="product" data-name="Hamburguesa hawaiana con papas/aros" data-price="120">
+                    <span>Hamburguesa hawaiana (con papas o aros)</span><strong>$120</strong>
+                </div>
+
+                <div class="product" data-name="Hamburguesa doble" data-price="125">
+                    <span>Hamburguesa doble</span><strong>$125</strong>
+                </div>
+
+                <div class="product" data-name="Hamburguesa doble con papas/aros" data-price="150">
+                    <span>Hamburguesa doble (con papas o aros)</span><strong>$150</strong>
+                </div>
+
+                <div class="product" data-name="Maruchan con Suadero" data-price="60">
+                    <span>Maruchan con Suadero</span><strong>$60</strong>
+                </div>
+
+                <div class="product" data-name="Tostitos con Suadero" data-price="60">
+                    <span>Tostitos con Suadero</span><strong>$60</strong>
+                </div>
+
+                <div class="product" data-name="Hot dog gigante" data-price="45">
+                    <span>Hot dog gigante</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Orden de hotdogs" data-price="80">
+                    <span>Orden de hotdogs (jamón y tocino)</span><strong>$80</strong>
+                </div>
+            </div>
+
+            <!-- ✅ ELOTES -->
+            <div class="category-block">
+                <h2>Elotes</h2>
+
+                <div class="product" data-name="Elotes" data-price="30">
+                    <span>Elotes</span><strong>$30</strong>
+                </div>
+
+                <div class="product" data-name="Esquite chico" data-price="35">
+                    <span>Esquite chico</span><strong>$35</strong>
+                </div>
+
+                <div class="product" data-name="Esquite grande" data-price="50">
+                    <span>Esquite grande</span><strong>$50</strong>
+                </div>
+
+                <div class="product" data-name="Dorito esquites" data-price="60">
+                    <span>Dorito esquites</span><strong>$60</strong>
+                </div>
+
+                <div class="product" data-name="Maruchan con esquites" data-price="60">
+                    <span>Maruchan con esquites</span><strong>$60</strong>
+                </div>
+
+                <div class="product" data-name="Chicharrón preparado con esquites" data-price="40">
+                    <span>Chicharrón preparado con esquites</span><strong>$40</strong>
+                </div>
+            </div>
+
+            <!-- ✅ POSTRES -->
+            <div class="category-block">
+                <h2>Postres</h2>
+
+                <div class="product" data-name="Fruta con crema" data-price="75">
+                    <span>Fruta con crema</span><strong>$75</strong>
+                </div>
+
+                <div class="product" data-name="Fresas con crema" data-price="95">
+                    <span>Fresas con crema</span><strong>$95</strong>
+                </div>
+
+                <div class="product" data-name="Donitas" data-price="45">
+                    <span>Donitas</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Donitas con fruta" data-price="70">
+                    <span>Donitas con fruta</span><strong>$70</strong>
+                </div>
+            </div>
+
+            <!-- ✅ PASTELES -->
+            <div class="category-block">
+                <h2>Pasteles</h2>
+
+                <div class="product" data-name="Brus de chocolate" data-price="70">
+                    <span>Brus de chocolate</span><strong>$70</strong>
+                </div>
+
+                <div class="product" data-name="Pay" data-price="45">
+                    <span>Pay</span><strong>$45</strong>
+                </div>
+
+                <div class="product" data-name="Rebanada de pastel" data-price="55">
+                    <span>Rebanada de pastel</span><strong>$55</strong>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Carrito (modal) -->
+    <div id="cart-modal" class="modal hidden" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" id="close-cart">&times;</button>
+            <h2>Carrito</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <div>Subtotal: <span id="subtotal">$0.00</span></div>
+                <div>Costo de envio: <span id="tax">$0.00</span></div>
+                <div class="total">Total: <span id="total">$0.00</span></div>
+            </div>
+            <div class="cart-actions">
+                <button id="clear-cart" class="btn secondary">Vaciar carrito</button>
+                <button id="send-whatsapp" class="btn primary">Enviar por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para preguntar si quiere agregar -->
+    <div id="extra-modal" class="modal hidden">
+        <div class="modal-content fade-in">
+            <h3>¿Deseas agregar fruta y crema?</h3>
+
+            <div class="modal-buttons">
+                <button id="extra-yes" class="btn primary">Sí, agregar</button>
+                <button id="extra-no" class="btn secondary">No, gracias</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para seleccionar frutas múltiples -->
+    <div id="fruit-modal" class="modal hidden">
+        <div class="modal-content fade-in">
+            <h3>Selecciona las frutas</h3>
+
+            <div class="fruit-list">
+                <label><input class="fruit-check" type="checkbox" value="Fresa"> Fresa 🍓</label>
+                <label><input class="fruit-check" type="checkbox" value="Durazno"> Durazno 🍑</label>
+                <label><input class="fruit-check" type="checkbox" value="Uva"> Uva 🍇</label>
+            </div>
+
+            <button id="btn-fruit-confirm" class="btn primary">Agregar</button>
+        </div>
+    </div>
+
+    <!-- Modal para complementos de hamburguesas -->
+    <div id="burger-extra-modal" class="modal hidden">
+        <div class="modal-content fade-in">
+            <h3>¿Deseas agregar complemento? (+$25)</h3>
+
+            <div class="complement-options">
+                <label><input type="checkbox" class="burger-extra" value="Papas"> Papas 🍟</label>
+                <label><input type="checkbox" class="burger-extra" value="Aros"> Aros 🧅</label>
+                <label><input type="checkbox" class="burger-extra" value="Ambos"> Ambos 🍟🧅</label>
+            </div>
+
+            <div class="modal-buttons">
+                <button id="burger-extra-yes" class="btn primary">Agregar</button>
+                <button id="burger-extra-no" class="btn secondary">No agregar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <small>Hecho por NEKO-MISHI — App de pedidos</small>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
