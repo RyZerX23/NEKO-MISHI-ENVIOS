@@ -45,7 +45,6 @@ const MENU = [
   { id: 'd5', cat: 'Postres', name: 'Pastel Bruce de chocolate', price: 70 },
   { id: 'd6', cat: 'Postres', name: 'Pay', price: 45 },
   { id: 'd7', cat: 'Postres', name: 'Pastel', price: 55 },
-  { id: 'd8', cat: 'Postres', name: 'Más fruta y crema (complemento)', price: 25 }
 ];
 
 
@@ -613,3 +612,4 @@ function escapeHtml(str) {
   const first = document.querySelector('.category-btn');
   if (first) first.click();
 })();
+
